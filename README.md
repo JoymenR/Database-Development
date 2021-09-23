@@ -10,11 +10,11 @@ The Scope of the Project is to design a database of a Community Portal Similar t
 ## Logical Design
 ![image](https://user-images.githubusercontent.com/91181779/134566374-072be33d-1ef6-4003-9ba1-aa591e743cc1.png)
 
-a. User table has one to one relation with User profile as user profile is a weak entity.
-b. User table has many to many relation between send message and send friend request as it is many to many relation there’s a bridge in between with columns such as status and time.
-c. User Table has many to many relation with Jobs Table so there is a bridge in between which has application status with status and time.
-d. Jobs has one to many relation with companies and jobs is a part of company. 
-e. Admin has many to many relation with companies and the bridge table contains the verification status
+* User table has one to one relation with User profile as user profile is a weak entity.
+*  User table has many to many relation between send message and send friend request as it is many to many relation there’s a bridge in between with columns such as status and time.
+* User Table has many to many relation with Jobs Table so there is a bridge in between which has application status with status and time.
+* Jobs has one to many relation with companies and jobs is a part of company. 
+* Admin has many to many relation with companies and the bridge table contains the verification status
 
 ## Unnormalized Form (UNF)
 ![image](https://user-images.githubusercontent.com/91181779/134566672-7c5dc224-0164-4136-a64c-37411315fa1e.png)
